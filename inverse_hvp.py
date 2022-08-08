@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 """Do inverse hessian-vector-product.
 """
-from optimize.optimize import fmin_ncg
+import sys
+sys.path.append("..") #to get to the parent directory
+#from optimize.optimize import fmin_ncg
+from optimize import fmin_ncg #changed for importing fmin_ncg
 import pdb
 import time
 import numpy as np
